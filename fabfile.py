@@ -7,4 +7,6 @@ def pull():
   
 @task  
 def install_requirements():
-  run('cd TicketingSystem && source env/bin/activate && pip install -r requirements.txt')
+  with cd('TicketingSystem'):
+    with prefix('source env/bin/activate'):
+      run('pip install -r requirements.txt')
