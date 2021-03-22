@@ -14,7 +14,7 @@ def deploy():
   with cd('TicketingSystem'):
     pull()
    
-    with prefix('source env/bin/activate')
+    with prefix('source env/bin/activate'):
       install requirements()
       
     sudo('systemctl restart nginx')
