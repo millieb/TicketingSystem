@@ -1,12 +1,20 @@
-from fabric.api import run, sudo, task, put, get
+from fabric.api import run, task, env, cd, prefix, sudo
 
-@task
+env.hosts = ['143.198.54.173']
+env.user = 'mildred'
+
 def pull():
-  with cd('TicketingSystem'):
-    run('git pull')
+  run('git pull')
   
-@task  
 def install_requirements():
+  run('pip install -r requirements.txt')
+  
+@task
+def deploy():
   with cd('TicketingSystem'):
-    with prefix('source env/bin/activate'):
-      run('pip install -r requirements.txt')
+    pull()
+   
+    with prefix('source env/bin/activate')
+      install requirements()
+      
+    sudo('systemctl restart nginx')
