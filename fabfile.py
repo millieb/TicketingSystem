@@ -15,6 +15,6 @@ def deploy():
     pull()
    
     with prefix('source env/bin/activate'):
-      install requirements()
+      install_requirements()
       
     sudo('systemctl restart nginx')
