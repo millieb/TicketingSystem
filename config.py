@@ -6,7 +6,7 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'mysql://root:@localhost/project'
+    SQLALCHEMY_DATABASE_URI = 'mysql://mildred:@localhost/project'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -16,7 +16,7 @@ class DevelopmentConfig(Config):
     MAIL_PASSWORD = config('MAIL_USERNAME', default='TestMildredBrito123') #ALWAYS safer to create an environment variable
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'mysql://root:@localhost/project_web_facilito_test'
+    SQLALCHEMY_DATABASE_URI = 'mysql://mildred:@localhost/project_test'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     TEST = True
 
