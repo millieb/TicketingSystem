@@ -25,10 +25,13 @@ from .const import LOGIN_REQUIRED
 #Se estara trabajando con la misma instancia
 def create_app(config):
     app.config.from_object(config)
+<<<<<<< HEAD
 
     csrf.init_app(app)
 
     csrf.init_app(app)
+=======
+>>>>>>> parent of 57cd5dc (Update __init__.py)
 
     if not app.config.get('TEST', False):
         bootstrap.init_app(app)
