@@ -13,6 +13,7 @@ app = Flask(__name__)
 
 mail = Mail()
 db = SQLAlchemy()
+csrf = CSRFProtect()
 bootstrap = Bootstrap()
 login_manager = LoginManager()
 
