@@ -3,7 +3,7 @@ from decouple import config
 class Config:
     #Utilizar llave diference y alphanumeric
     SECRET_KEY = 'project'
-    SERVER_NAME = 'local.docker:8000'
+    SERVER_NAME = 'local.host:80'
 
 class DevelopmentConfig(Config):
     DEBUG = True
