@@ -2,7 +2,8 @@ from decouple import config
 
 class Config:
     #Utilizar llave diference y alphanumeric
-    SECRET_KEY = 'project' 
+    SECRET_KEY = 'project'
+    SERVER_NAME = 'local.host'
 
 class DevelopmentConfig(Config):
     DEBUG = True
