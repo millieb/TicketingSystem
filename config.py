@@ -1,6 +1,7 @@
 from decouple import config
 
 class Config:
+    SERVER_KEY = 'project'
     SERVER_NAME = 'local.host:80'
     
 class DevelopmentConfig(Config):
