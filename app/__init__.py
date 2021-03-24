@@ -32,6 +32,8 @@ def create_app(config):
 
     csrf.init_app(app)
 
+    csrf.init_app(app)
+
     if not app.config.get('TEST', False):
         bootstrap.init_app(app)
 
