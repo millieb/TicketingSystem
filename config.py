@@ -2,6 +2,7 @@ from decouple import config
 
 class Config:
 <<<<<<< HEAD
+<<<<<<< HEAD
     SERVER_KEY = 'project'
     SERVER_NAME = 'local.host:80'
     
@@ -21,6 +22,11 @@ class Config:
 =======
     SERVER_NAME = 'local.docker:8000'
 >>>>>>> parent of bcb5f94 (Update config.py)
+=======
+    #Utilizar llave diference y alphanumeric
+    SECRET_KEY = 'project'
+    SERVER_NAME = 'local.host:80'
+>>>>>>> parent of 4d38943 (Update config.py)
 
 >>>>>>> parent of bcb5f94 (Update config.py)
 class DevelopmentConfig(Config):
