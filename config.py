@@ -1,34 +1,9 @@
 from decouple import config
 
 class Config:
-<<<<<<< HEAD
-<<<<<<< HEAD
     SERVER_KEY = 'project'
     SERVER_NAME = 'local.host:80'
     
-=======
-    #Utilizar llave diference y alphanumeric
-<<<<<<< HEAD
-    SECRET_KEY = 'project'
-<<<<<<< HEAD
-<<<<<<< HEAD
-    SERVER_NAME = 'local.docker:8000'
-=======
-    SECRET_KEY = 'codigofacilito' 
->>>>>>> parent of 4520eb3 (Update config.py)
-=======
-    SERVER_NAME = 'local.host'
->>>>>>> parent of 184f21c (Update config.py)
-=======
-    SERVER_NAME = 'local.docker:8000'
->>>>>>> parent of bcb5f94 (Update config.py)
-=======
-    #Utilizar llave diference y alphanumeric
-    SECRET_KEY = 'project'
-    SERVER_NAME = 'local.host:80'
->>>>>>> parent of 4d38943 (Update config.py)
-
->>>>>>> parent of bcb5f94 (Update config.py)
 class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = 'mysql://mildred:@localhost/project'
