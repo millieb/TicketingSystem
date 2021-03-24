@@ -1,6 +1,7 @@
 class Config:
     #Utilizar llave diference y alphanumeric
     SECRET_KEY = 'codigofacilito' 
+    SERVER_NAME = 'local.host=80'
 
 class DevelopmentConfig(Config):
     DEBUG = True
