@@ -1,7 +1,8 @@
 from decouple import config
 
 class Config:
-
+    SERVER_NAME = 'local.host:80'
+    
 class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = 'mysql://mildred:@localhost/project'
