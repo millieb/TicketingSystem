@@ -9,10 +9,18 @@ class Config:
     #Utilizar llave diference y alphanumeric
 <<<<<<< HEAD
     SECRET_KEY = 'project'
+<<<<<<< HEAD
+<<<<<<< HEAD
     SERVER_NAME = 'local.docker:8000'
 =======
     SECRET_KEY = 'codigofacilito' 
 >>>>>>> parent of 4520eb3 (Update config.py)
+=======
+    SERVER_NAME = 'local.host'
+>>>>>>> parent of 184f21c (Update config.py)
+=======
+    SERVER_NAME = 'local.docker:8000'
+>>>>>>> parent of bcb5f94 (Update config.py)
 
 >>>>>>> parent of bcb5f94 (Update config.py)
 class DevelopmentConfig(Config):
