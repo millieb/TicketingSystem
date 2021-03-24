@@ -2,7 +2,7 @@ from decouple import config
 
 class Config:
     #Utilizar llave diference y alphanumeric
-    SECRET_KEY = 'codigofacilito' 
+    SECRET_KEY = 'project' 
 
 class DevelopmentConfig(Config):
     DEBUG = True
