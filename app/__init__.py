@@ -5,7 +5,6 @@ from flask import Flask
 from flask_mail import Mail
 from flask_login import LoginManager
 from flask_bootstrap import Bootstrap
-from flask_wtf.csrf import CSRFProtect
 from flask_sqlalchemy import SQLAlchemy
 
 #Creamos instancias para cada libreria
@@ -13,7 +12,6 @@ app = Flask(__name__)
 
 mail = Mail()
 db = SQLAlchemy()
-csrf = CSRFProtect()
 bootstrap = Bootstrap()
 login_manager = LoginManager()
 
@@ -27,8 +25,6 @@ from .const import LOGIN_REQUIRED
 #Se estara trabajando con la misma instancia
 def create_app(config):
     app.config.from_object(config)
-    
-    csrf.init_app(app)
 
     csrf.init_app(app)
 
