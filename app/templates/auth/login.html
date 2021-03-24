@@ -8,6 +8,8 @@
             
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" \>
 
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" \> 
+
             <div class="form-group">
                 {{ render_field(form.username, class='form-control', placeholder='username') }}
             </div>
